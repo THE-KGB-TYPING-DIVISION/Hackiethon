@@ -1,6 +1,5 @@
 print("hi")
 print("c is trash")
-<<<<<<< HEAD
 rnadon = 3
 print(rnadon)
 test = 'a'
@@ -10,4 +9,3 @@ while i < 6:
     i += 1
 
 print(ord(test))
-=======
