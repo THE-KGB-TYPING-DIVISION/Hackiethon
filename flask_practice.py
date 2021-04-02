@@ -21,7 +21,7 @@ def random_joke(numb):
         print("He was probably just going through a stage.")
     return 'hi'
 
-@app.route("/profile/name")
+@app.route("/profile/<name>")
 def profile(name):
     return render_template("profile.html", name=name)
 
