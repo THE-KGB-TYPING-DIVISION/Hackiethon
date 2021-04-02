@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, render_template
 import random
 
 app = Flask(__name__)
@@ -25,6 +25,6 @@ def random_joke(numb):
 def profile(name):
     return render_template("profile.html", name=name)
 
-    
+
 if __name__ == '__main__':
     app.run(debug=True)
