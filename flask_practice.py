@@ -3,6 +3,11 @@ import random
 
 app = Flask(__name__)
 
+@app.route('/')
+def home()
+    return render_template('homepage.html')
+    
+
 @app.route('/joke/<int:numb>')
 def random_joke(numb):
     if numb == 1:
