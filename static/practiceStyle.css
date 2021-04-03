@@ -1,3 +1,12 @@
+.header-cont { width:100%; position:fixed; top:0px; }
+.header {
+    height: 50px;
+    background: #F0F0F0;
+    border: 1px solid #CCC;
+    width:auto;
+    margin:0px auto;
+}
+
 /* The side navigation menu */
 .sidebar{
     margin: 0;
@@ -38,12 +47,11 @@ height: 1000px;
 .adbar {
     margin: 0;
     right: 0px;
-    padding: 0;
-    width: 200px;
     background-color: #f1f1f1;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
+    position: absolute;
+
+    width: auto;
+    border: 1px solid #CCC;
 }
 p{
     color: #1cb041;
@@ -66,14 +74,7 @@ p{
 .btn1:hover{
     border: none;
 }
-.header-cont { width:100%; position:fixed; top:0px; }
-.header {
-    height: 50px;
-    background: #F0F0F0;
-    border: 1px solid #CCC;
-    width:auto;
-    margin:0px auto;
-}
+
 .content {
     width: auto;
     background:#F0F0F0;
