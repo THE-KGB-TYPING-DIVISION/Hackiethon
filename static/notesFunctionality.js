@@ -7,6 +7,7 @@ window.onload = function() {
         else {
             menu.className = 'hiddenmenu';
         }*/
+        document.getElementById('area').value=localStorage.getItem('note')
     }
 
 function check_web_storage_support() {
@@ -18,7 +19,7 @@ function check_web_storage_support() {
         return(false);
     }
 }
-window.onload = function display_saved_note() {
+function display_saved_note() {
     if(localStorage.getItem('note') !== null) {
         result = localStorage.getItem('note');
     }
