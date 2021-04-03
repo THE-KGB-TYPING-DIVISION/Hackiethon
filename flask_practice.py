@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/home/')
 def home():
-    joke = "rand"
+    joke = 'rand'
     numb = 1
     if numb == 1:
         joke = "Why did Steve fall off the tractor ............ because Steve was a strawberry"
