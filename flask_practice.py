@@ -28,6 +28,10 @@ def profile(name):
     joke = 'maybe'
     return render_template("profile.html", name=name, joke=joke)
 
+@app.route('/homepage/rick_astley')
+def ricky():
+    return render_template('rick_astley.html')
+
 @app.route('/homepage/')
 def homepage():
     joke = 'rand'
