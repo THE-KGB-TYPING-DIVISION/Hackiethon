@@ -99,8 +99,6 @@ p{
 .watermarc{
     color: yellow;
     background-color: red;
-    height: 5%;
-    width: 30%;
 }
 .watermarc:hover{
     color: rgba(0, 0, 0, 0);
