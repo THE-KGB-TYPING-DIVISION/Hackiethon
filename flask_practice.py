@@ -36,22 +36,7 @@ def sike():
 
 @app.route('/homepage/note/')
 def note():
-    return render_template('notepage.html')### file_path=file_path, files=files)
-    """file_path = input("\nCreate file")
-    
-    files = open(file_path, 'a')
-
-    line_count = 1
-
-    while line_count > 0:
-        try:
-            line = input("\t"+str(line_count)+" ")
-            files.write(line)
-            files.write('\n')
-            line_count += 1
-        except KeyboardInterrupt:
-            print("\n\n\tClosing...")
-            break"""
+    return render_template('webnotes.html')
 @app.route('/homepage/note/timer')
 def countdownCall():
     countdown(10)
