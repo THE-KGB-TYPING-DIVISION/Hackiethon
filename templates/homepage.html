@@ -12,9 +12,11 @@
         Marc Chee is sweaty
     </h1>
     <h2>
-    <button type="button"  id = 'script' name="scriptbutton" value =" Run Script " onclick="home()">clickme!</button> 
-        <form action="/" method="post">
-            <button name="joke" type="submit" id = 'script' n>Joke!</button>
+    <button type="button" onclick="alert(joke)">clickme!</button> 
+        
+    
+        <form action="/home/" method="post">
+            <button name="joke" type="submit" id = 'script' onclick="alert(joke)">Joke!</button>
             {{ joke }} 
         </form>
     </h2>
