@@ -52,6 +52,7 @@ p{
 
 .btn{
     background-color: burlywood;
+    border-radius: 8px;
     border: none;
 }
 .btn:hover{
@@ -60,6 +61,7 @@ p{
 
 .btn1{
     background-color: rgb(222, 135, 196);
+    border-radius: 8px;
     border-width: thick;
     padding: 10px;
 }
