@@ -50,8 +50,9 @@
             <script>
                 function joke() {
                     var x = Math.floor(Math.random() * 5);
-                    var audio = new Audio('laugh.mp3');
+                    var audio = new Audio('/static/audio/laugh.mp3');
                     audio.play();
+                    
                     var joke = "Whats a bee's favourite novel? The Great Gats Bee";
                     if (x == 1) {
                         joke = "Why did Steve fall off the tractor? Because Steve was a strawberry";
