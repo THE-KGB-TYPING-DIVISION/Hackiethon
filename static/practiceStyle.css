@@ -100,8 +100,8 @@ p{
 .watermarc:hover{
     background:url("/static/images/resizedwatermarc.jpg") no-repeat;
     position:fixed;
-    width: 130px;
-    height: 195px;
-    right:200px;
+    width: 150px;
+    height: 150px;
+    right:220px;
     bottom:0px;
 }
