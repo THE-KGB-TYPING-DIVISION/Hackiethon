@@ -26,6 +26,9 @@
             <a href="https://www.facebook.com/sharer/sharer.php?kid_directed_site=0&u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&display=popup&ref=plugin&src=share_button" target=_blank>
                 <img src="/static/images/facebookLogo.png" width="60" height="40"/>
             </a>
+            <script>
+                console.log("hello world")
+            </script>
         </center>
     </div>
     <div class="adbar">
@@ -43,7 +46,34 @@
                 </button>
             </a>
         <br>
-            <button class="jokebtn" type="button"  onclick="alert('{{ joke }}')">Joke!</button>
+            
+            <script>
+                function joke() {
+                    var x = Math.floor(Math.random() * 5);
+                    var joke = "Whats a bee's favourite novel? The Great Gats Bee";
+                    if (x == 1) {
+                        joke = "Why did Steve fall off the tractor? Because Steve was a strawberry";
+                    }
+                    if (x == 2) {
+                        joke = "My wife told me to stop acting like a flamingo. So I had to put my foot down";
+                    }
+                    if (x == 3) {
+                        joke = "Did you hear about the mathematician who was afraid of negative numbers? He’ll stop at nothing to avoid them.";
+                    }
+                    if (x == 4) {
+                        joke = "Did you hear about the restaurant called Karma? There is no menu, you get what you deserve";
+                    }
+                    if (x == 5) {
+                        joke =  "Did you hear about the actor who fell through the floorboards? He was probably just going through a stage.";
+                    }
+                    alert(joke);
+                }
+            </script>
+             <button onclick="joke()">Joke</button>
+            <!--<button class="jokebtn" type="button"  onclick="alert('{{ joke }}')">Joke!</button>-->
+
+
+
         <br>
         <a>
             <button class = "watermarc">
