@@ -1,6 +1,7 @@
 from flask import Flask, render_template, url_for, Response, request, redirect
 
 import random
+from os import path
 
 app = Flask(__name__)
 
@@ -35,6 +36,26 @@ def homepage():
 @app.route("/homepage/sike/")
 def sike():
     return render_template("sikeSubpage.html")
+
+@app.route("/hompage/note")
+def note():
+    
+    file_path = input("\nCreate file")
+    
+    files = open(file_path, 'a')
+
+    line_count = 1
+
+    while line_count > 0:
+        try:
+            line = input("\t"+str(line_count)+" ")
+            files.write(line)
+            files.write('\n')
+            line_count += 1
+        except KeyboardInterrupt:
+            print("\n\n\tClosing...")
+            break
+    return render_template("notepage.html")### file_path=file_path, files=files)
 
 
 if __name__ == '__main__':
