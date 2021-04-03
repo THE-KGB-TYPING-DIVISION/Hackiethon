@@ -31,9 +31,9 @@ def homepage():
     return render_template("homepagePractice.html")
 
 @app.route("/homepage/sike/")
-def sike(){
+def sike():
     return render_template("sikeSubpage.html")
-}
+
 
 
 
