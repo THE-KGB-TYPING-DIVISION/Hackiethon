@@ -3,7 +3,7 @@ import random
 
 app = Flask(__name__)
 
-@app.route('/home/')
+@app.route('/joke/')
 def home():
     joke = "rand"
     numb = 1
@@ -43,7 +43,10 @@ def random_joke(numb):
 
 @app.route("/profile/<name>")
 def profile(name):
-    return render_template("profile.html", name=name)
+    joke = 'maybe'
+    return render_template("profile.html", name=name, joke=joke)
+
+
 
 
 if __name__ == '__main__':
