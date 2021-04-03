@@ -2,7 +2,7 @@ from flask import Flask
 
 import random
 
-
+print("debug")
 numb = random.randint(1,5)
 if numb == 1:
     print("Why did Steve fall off the tractor")
