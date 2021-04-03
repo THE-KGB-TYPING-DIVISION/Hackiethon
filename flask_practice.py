@@ -4,7 +4,7 @@ import random
 
 app = Flask(__name__)
 
-@app.route('/homepage/')
+@app.route('/home/')
 def home():
     joke = 'rand'
     numb = random.randint(1,5)
@@ -18,8 +18,10 @@ def home():
         joke = "Did you hear about the restaurant called Karma? There is no menu, you get what you deserve"
     elif numb == 5:
         joke = "Did you hear about the actor who fell through the floorboards? He was probably just going through a stage."
-    return render_template('homepagePractice.html', joke=joke)
-
+    return render_template('homepage.html', joke=joke)
+@app.route('/home/notepage')
+def notepage():
+    return render_template(notepage.html)
 
 @app.route("/profile/<name>")
 def profile(name):
