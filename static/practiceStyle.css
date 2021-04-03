@@ -52,26 +52,7 @@ p{
     font-family: 'Courier New', Courier, monospace;
 }
 
-.notebutton{
-    color: yellow;
-    background-color: red;
-    border-radius: 8px;
-    border: none;
-}
-.btn:hover{
-    background-color: black;
-}
 
-.btn1{
-    border-radius: 8px;
-    border-width: thick;
-    padding: 10px;
-    color: yellow;
-    background-color: red;
-}
-.btn1:hover{
-    border: none;
-}
 .header-cont { width:100%; position:fixed; top:0px; }
 .header {
     height: 100px;
@@ -95,6 +76,28 @@ p{
     bottom:0px;
 }
 
+/*BUTTONS*/
+
+/*to go to notes*/
+.notesbtn{
+    color: yellow;
+    background-color: red;
+    border-radius: 8px;
+    border: none;
+}
+.notesbtn:hover{
+    background-color: black;
+}
+
+/*joke button*/
+.jokebtn{
+    color: yellow;
+    background: red;
+}
+.jokebtn:hover{
+    background-color: black;
+}
+
 /*for watermarc*/
 .watermarc{
     color: yellow;
@@ -109,4 +112,17 @@ p{
     height: 140px;
     right:230px;
     bottom:0px;
+}
+
+/*to threaten your family*/
+.threatbtn{
+    border-radius: 8px;
+    border-width: thick;
+    padding: 10px;
+    color: yellow;
+    background-color: red;
+}
+.threatbtn:hover{
+    border: none;
+    background-color: black;
 }
