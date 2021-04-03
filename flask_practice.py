@@ -26,6 +26,14 @@ def profile(name):
     joke = 'maybe'
     return render_template("profile.html", name=name, joke=joke)
 
+@app.route("/homepage/")
+def homepage():
+    return render_template("homepagePractice.html")
+
+@app.route("/homepage/sike/")
+def sike(){
+    return render_template("sikeSubpage.html")
+}
 
 
 
