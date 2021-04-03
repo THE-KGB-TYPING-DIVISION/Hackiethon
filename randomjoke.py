@@ -1,7 +1,16 @@
 from flask import Flask
-
+import time
 import random
 
+def countdown(t):
+    while t:
+        mins, secs = divmod(t,60)
+        timer = '{:02d}:{:02d}'.format(mins, secs)
+        print(timer,end = "\r")
+        time.sleep(1)
+        t -= 1
+    print("end timer")
+countdown(10)
 print("debug")
 numb = random.randint(1,5)
 if numb == 1:
