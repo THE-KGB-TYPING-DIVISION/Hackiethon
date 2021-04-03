@@ -1,0 +1,21 @@
+p{
+    color: #1cb041;
+    font-family: Trebuchet MS;
+}
+
+.btn{
+    background-color: burlywood;
+    border: none;
+}
+.btn:hover{
+    background-color: black;
+}
+
+.btn1{
+    background-color: rgb(222, 135, 196);
+    border-width: thick;
+    padding: 10px;
+}
+.btn1:hover{
+    border: none;
+}
