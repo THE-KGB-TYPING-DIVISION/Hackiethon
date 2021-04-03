@@ -42,4 +42,5 @@ function save() {
 }
 function clear() {
     document.getElementById('area').value = "";
+    localStorage.setItem("note", area.value);
 }
