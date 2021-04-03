@@ -52,8 +52,9 @@ p{
     font-family: 'Courier New', Courier, monospace;
 }
 
-.btn{
-    background-color: burlywood;
+.notebutton{
+    color: yellow;
+    background-color: red;
     border-radius: 8px;
     border: none;
 }
@@ -62,10 +63,11 @@ p{
 }
 
 .btn1{
-    background-color: rgb(222, 135, 196);
     border-radius: 8px;
     border-width: thick;
     padding: 10px;
+    color: yellow;
+    background-color: red;
 }
 .btn1:hover{
     border: none;
@@ -94,6 +96,12 @@ p{
 }
 
 /*for watermarc*/
+.watermarc{
+    color: yellow;
+    background-color: red;
+    height: 5%;
+    width: 30%;
+}
 .watermarc:hover{
     color: rgba(0, 0, 0, 0);
     background:url("/static/images/resizedwatermarc.jpg") no-repeat;
