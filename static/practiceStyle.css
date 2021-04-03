@@ -89,7 +89,7 @@ p{
     bottom:0px;
 }
 
-
+/*for watermarc*/
 .watermarc a { position:relative; }
 .watermarc a span { position:absolute; display:none; z-index:99; }
 .watermarc a:hover span { display:block; }
