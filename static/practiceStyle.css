@@ -93,15 +93,13 @@ p{
 }
 
 /*for watermarc*/
-.watermarc{
-    width: 215px;
-    height: 215px;
-}
 .watermarc:hover{
+    color: rgba(0, 0, 0, 0);
     background:url("/static/images/resizedwatermarc.jpg") no-repeat;
+    z-index: 10;
     position:fixed;
-    width: 150px;
-    height: 150px;
-    right:220px;
+    width: 140px;
+    height: 140px;
+    right:230px;
     bottom:0px;
 }
