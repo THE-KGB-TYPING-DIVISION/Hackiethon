@@ -10,8 +10,9 @@
 }
 /* Sidebar links */
 .sidebar a {
-    display: block;
     color: black;
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
     padding: 16px;
     text-decoration: none;
 }
@@ -19,7 +20,7 @@
 /* Active/current link */
 .sidebar a.active {
 background-color: #4CAF50;
-color: white;
+color: black;
 }
 
 /* Links on mouse-over */
