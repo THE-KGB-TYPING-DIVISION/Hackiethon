@@ -75,8 +75,6 @@ def countdownCall():
     countdown(10)
     return render_template('timer.html')
 
-
-
 @app.route('/homepage/note/timer')
 def countdown(t):
     
