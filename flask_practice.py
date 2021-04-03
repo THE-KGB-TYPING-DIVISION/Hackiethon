@@ -39,7 +39,7 @@ def sike():
 @app.route('/homepage/note/')
 def note():
     return render_template('notepage.html')### file_path=file_path, files=files)
-    file_path = input("\nCreate file")
+    """file_path = input("\nCreate file")
     
     files = open(file_path, 'a')
 
@@ -53,8 +53,12 @@ def note():
             line_count += 1
         except KeyboardInterrupt:
             print("\n\n\tClosing...")
-            break
-"""@app.route('/homepage/note/')
+            break"""
+@app.route('/homepage/note/timer')
+def countdownCall():
+    countdown(10)
+    return render_template('timer.html')
+
 def countdown(t):
     while t:
         mins, secs = divmod(t,60)
@@ -63,7 +67,6 @@ def countdown(t):
         time.sleep(1)
         t -= 1
     print("end timer")
-countdown(10)"""
 
 
 
