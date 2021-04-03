@@ -1,9 +1,9 @@
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, url_for, Response, request, redirect
 import random
 
 app = Flask(__name__)
 
-@app.route('/', methods = ['POST'])
+@app.route('/home/')
 def home():
     joke = "rand"
     numb = 1
