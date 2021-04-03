@@ -12,18 +12,6 @@ def ricky():
 
 @app.route('/homepage/')
 def homepage():
-    """joke = 'rand'
-    numb = random.randint(1,5)
-    if numb == 1:
-        joke = "Why did Steve fall off the tractor? Because Steve was a strawberry"
-    elif numb == 2:
-        joke = "My wife told me to stop acting like a flamingo. So I had to put my foot down"
-    elif numb == 3:
-        joke = "Did you hear about the mathematician who was afraid of negative numbers? He’ll stop at nothing to avoid them."
-    elif numb == 4:
-        joke = "Did you hear about the restaurant called Karma? There is no menu, you get what you deserve"
-    elif numb == 5:
-        joke = "Did you hear about the actor who fell through the floorboards? He was probably just going through a stage."""
     return render_template('homepagePractice.html')
 
 @app.route('/homepage/about')
@@ -36,41 +24,11 @@ def sike():
 
 @app.route('/homepage/note/')
 def note():
-    return render_template('notepage.html')### file_path=file_path, files=files)
-    """file_path = input("\nCreate file")
-    
-    files = open(file_path, 'a')
+    return render_template('notepage.html')
 
-    line_count = 1
-
-    while line_count > 0:
-        try:
-            line = input("\t"+str(line_count)+" ")
-            files.write(line)
-            files.write('\n')
-            line_count += 1
-        except KeyboardInterrupt:
-            print("\n\n\tClosing...")
-            break"""
 @app.route('/homepage/note/timer')
 def countdownCall():
-    countdown(10)
     return render_template('timer.html')
-
-@app.route('/homepage/note/timer')
-def countdown(t):
-    
-    while t > 0:
-        mins, secs = divmod(t,60)
-        timer = '{:02d}:{:02d}'.format(mins, secs)
-        print(timer,end = "\r")
-        time.sleep(1)
-        t -= 1
-    return 
-
-
-    
-
 
 
 if __name__ == '__main__':
