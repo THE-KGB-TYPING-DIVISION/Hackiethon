@@ -90,6 +90,12 @@ p{
 }
 
 /*for watermarc*/
-.watermarc a { position:relative; }
-.watermarc a span { position:absolute; display:none; z-index:99; }
-.watermarc a:hover span { display:block; }
+.watermarc{
+    background: url("/static/images/MARK.jfif") no-repeat;
+    width: 130px;
+    height: 195px;
+    margin: 50px;
+}
+.watermarc:hover{
+    background:url("/static/images/watermarc.jpg") no-repeat;
+}
