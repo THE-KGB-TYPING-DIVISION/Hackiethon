@@ -94,9 +94,14 @@ p{
 
 /*for watermarc*/
 .watermarc{
-    width: 130px;
-    height: 195px;
+    width: 215px;
+    height: 215px;
 }
 .watermarc:hover{
-    background:url("/static/images/watermarc.jpg") no-repeat;
+    background:url("/static/images/resizedwatermarc.jpg") no-repeat;
+    position:fixed;
+    width: 130px;
+    height: 195px;
+    right:200px;
+    bottom:0px;
 }
