@@ -47,8 +47,8 @@ height: 1000px;
     overflow: auto;
 }
 p{
-    color: #1cb041;
-    font-family: Trebuchet MS;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .btn{
