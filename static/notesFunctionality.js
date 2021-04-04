@@ -1,12 +1,4 @@
 window.onload = function() {
-    /*document.getElementById('menulink').onclick = function() {
-        var menu = document.getElementById('menu');
-        if(menu.className != 'shownmenu') {
-            menu.className = 'shownmenu';
-        }
-        else {
-            menu.className = 'hiddenmenu';
-        }*/
         document.getElementById('area').value=localStorage.getItem('note')
     }
 
@@ -33,6 +25,7 @@ function save() {
     if(check_web_storage_support() == true) {
         var area = document.getElementById("area");
         if(area.value != '') {
+            
             localStorage.setItem("note", area.value);
         }
         else {
