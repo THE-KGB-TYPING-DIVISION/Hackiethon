@@ -16,11 +16,12 @@ p {
     <p id="mins"></p>
     <p id="secs"></p>
     <h2 id="end"></h2>
-    <button onclick="reset()">Reset timer</button>
+    <button onclick="reset();">Reset timer</button>
     <script>
+
     function savedtimer() {
-        var datetocount = localStorage.getItem("datetocount")
-        var countDownDate = new Date(datetocount).getTime();
+        //var datetocount = localStorage.getItem("datetocount")
+        var countDownDate = new Date(localStorage.getItem("datetocount")).getTime();
         var myfunc = setInterval(function() {
         var now = new Date().getTime();
         var timeleft = countDownDate - now;
@@ -47,17 +48,13 @@ p {
         }
         }, 1000);
     }
-    savedtimer();
     function reset(){
         var datetocount = window.prompt("Enter the date you want to count down to (in the form Jul 25, 2021 16:37:52): ");
         var countDownDate = new Date(datetocount).getTime();
-        localStorage.setItem("time", countDownDate);
         localStorage.setItem("datetocount", datetocount);
         var myfunc = setInterval(function() {
-
         var now = new Date().getTime();
         var timeleft = countDownDate - now;
-        localStorage.setItem("timeleft", timeleft)  
         // Calculating the days, hours, minutes and seconds left
         var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
         var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -80,7 +77,9 @@ p {
             document.getElementById("end").innerHTML = "ono";
         }
         }, 1000);
+        window.location.reload();
     }
+    savedtimer();
     </script>
 </body>
 </html>
