@@ -9,24 +9,32 @@ p {
 }
 body {
     background-color: rgb(204, 0, 0);
-    background: url('file://static/images/ourlogo.png') no-repeat center center fixed;
-    background-size: cover;
 }
-.logo {
+.background{
+    position: relative;
+    text-align: center;
     opacity: 0.1;
-    z-index: -1;
+}
+.class{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: royalblue;
 }
 </style>
 </head>
 <body>
-<center>
-    <p id="days"></p>
-    <p id="hours"></p>
-    <p id="mins"></p>
-    <p id="secs"></p>
-    <h2 id="end"></h2>
-    <button class = timerbutton onclick="reset()">Reset timer</button>
-</center>
+    <center>
+    <div class="container">
+        <p id="days"></p>
+        <p id="hours"></p>
+        <p id="mins"></p>
+        <p id="secs"></p>
+        <h2 id="end"></h2>
+        <button onclick="reset()">Reset timer</button>
+      </div>
+      <img class='background' src="/static/images/ourlogo.png" alt="logo" style="width:100%;">
+    </center>
     <script>
     function savedtimer() {
         var datetocount = localStorage.getItem("datetocount")
@@ -97,10 +105,5 @@ body {
     <audio autoplay loop>
         <source src = "/static/audio/tick.mp3" type = "audio/mpeg">
     </audio>
-    <center>
-        <p class="logo">
-            <img src="/static/images/ourlogo.png" height=400px/>
-        </p>
-    </center>
 </body>
 </html>
