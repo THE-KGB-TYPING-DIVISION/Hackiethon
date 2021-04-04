@@ -40,3 +40,9 @@ function clear() {
     document.getElementById('area').value = "";
     localStorage.setItem(stor, area.value);
 }
+
+function display_all() {
+    for(var i =0; i < localStorage.length; i++) {
+        console.log(localStorage.getItem(localStorage.key(i)));
+    }
+}
