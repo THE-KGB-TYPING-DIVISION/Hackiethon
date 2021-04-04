@@ -15,6 +15,24 @@ body {
     background-color: red;
     padding-left: 20px;
 }
+/* The side navigation menu */
+.sidebar{
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+/* Sidebar links */
+.sidebar a {
+    color: black;
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 16px;
+    text-decoration: none;
+}
 
 /* Active/current link */
 .sidebar a.active {
