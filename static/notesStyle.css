@@ -112,6 +112,6 @@ a.button:hover {
 a.button:active {
     background: rgba(160, 125, 120, 1);
 }
-.all_notes{
-    left: 50%;
+.allnotes{
+    margin-left: 50%;
 }
