@@ -9,7 +9,15 @@ p {
   margin-top: 0px;
 }
 body {
-    background-color: red;
+    background-color: rgb(204, 0, 0);
+}
+.logo {
+    opacity: 0.1;
+}
+.timerbutton {
+  position: absolute;
+  top: 49%;
+  transform: translateY(-80%);
 }
 </style>
 </head>
@@ -20,7 +28,7 @@ body {
     <p id="mins"></p>
     <p id="secs"></p>
     <h2 id="end"></h2>
-    <button onclick="reset()">Reset timer</button>
+    <button class = timerbutton onclick="reset()">Reset timer</button>
 </center>
     <script>
     function savedtimer() {
@@ -92,5 +100,10 @@ body {
     <audio autoplay loop>
         <source src = "/static/audio/tick.mp3" type = "audio/mpeg">
     </audio>
+    <center>
+        <p class="logo">
+            <img src="/static/images/ourlogo.png" height=400px/>
+        </p>
+    </center>
 </body>
 </html>
