@@ -132,8 +132,8 @@ p{
     background:url("/static/images/resizedwatermarc.jpg") no-repeat;
     z-index: 10;
     position:fixed;
-    width: 140px;
-    height: 140px;
+    width: 150px;
+    height: 150px;
     right:50px;
     bottom:0px;
 }
