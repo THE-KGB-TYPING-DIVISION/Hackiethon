@@ -3,17 +3,32 @@
 body {
     margin: 0px;
 }
-#header {
-    background: rgb(255,0,0);
+
+.header-cont { width:100%; position:fixed; top:0px; }
+.header {
+    height: 100px;
+    background: #F0F0F0;
+    border: 1px solid #CCC;
+    width:auto;
+    margin:0px auto;
+    color: yellow;
+    background-color: red;
+    padding-left: 20px;
+}
+
+/* Active/current link */
+.sidebar a.active {
+    background-color: #4CAF50;
+    color: black;
+}
+    
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+    background-color: #555;
     color: white;
-    font: 'Comic Sans MS';
-    font-size: 16px;
-    padding: 16px;
 }
-#header > #name {
-    font-family: Arial, Sans-serif;
-    display: inline-block;
-}
+
+
 #menu a, #menubutton a {
     text-decoration: none;
     color: white;
