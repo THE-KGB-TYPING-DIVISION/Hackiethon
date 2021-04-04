@@ -42,9 +42,13 @@ function clear() {
 }
 
 function display_all() {
+    
     var all_notes = ''
+    
     for(var i =0; i < localStorage.length; i++) {
-        all_notes = i + all_notes + localStorage.getItem(localStorage.key(i)) + '\n';
+        if (localStorage.key(i) != 'highscore' && localStorage.key(i) != 'datetocount' && localStorage.key(i) != 'time') {
+            all_notes = all_notes + i + ' ' + localStorage.getItem(localStorage.key(i)) + '\n';
+        }
     }
     document.getElementById('all notes').value = all_notes;
 }
