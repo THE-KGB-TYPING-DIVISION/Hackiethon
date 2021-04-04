@@ -46,7 +46,7 @@ function display_all() {
     var all_notes = ''
     
     for(var i =0; i < localStorage.length; i++) {
-        if (localStorage.key(i) != 'highscore' && localStorage.key(i) != 'datetocount' && localStorage.key(i) != 'time') {
+        if (localStorage.key(i) != 'highscore' && localStorage.key(i) != 'datetocount' && localStorage.key(i) != 'time' && localStorage.key(i) != 'timeleft') {
             all_notes = all_notes + localStorage.key(i) + ' ' + localStorage.getItem(localStorage.key(i)) + '\n';
         }
     }
