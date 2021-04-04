@@ -13,36 +13,26 @@ function check_web_storage_support() {
     }
 }
 function display_saved_note() {
-    if(localStorage.getItem(stor) !== null) {
-        result = localStorage.getItem(stor);
+    var noteToDisplay = window.prompt("What is the index of the note you want?");
+    if(localStorage.getItem(noteToDisplay) !== null) {
+        result = localStorage.getItem(noteToDisplay);
     }
     if(result === null) {
         result = "No note saved";
     }
     document.getElementById('area').value = result;
 }
-display_saved_note();
 function save() {
-    /*if (localStorage.getItem('stor') == null) {
-        var stor = 0;
-    } else {
-        stor += 1;
-    }*/
     if(check_web_storage_support() == true) {
         var area = document.getElementById("area");
         if(area.value != '') {
-            localStorage.setItem('stor', localStorage.length);
-            localStorage.setItem(localStorage.length+1, area.value);
+            localStorage.setItem(localStorage.length, area.value);
         }
         else {
             alert("Nothing to save");
         
         }
 
-    }
-    console.log(localStorage.length);
-    for (var i = 0; i < localStorage.length; i++) {
-        console.log(localStorage.getItem(localStorage.key(i)));
     }
 }
 
