@@ -52,3 +52,18 @@ function display_all() {
     }
     document.getElementById('all notes').value = all_notes;
 }
+
+function show_image(src, width, height, alt) {
+    var img = document.createElement("img");
+    img.src = src;
+    img.width = width;
+    img.height = height;
+    img.alt = alt;
+    
+    // This next line will just add it to the <body> tag
+    document.body.appendChild(img); 
+  }
+function big_save() {
+    save();
+    show_image('/static/images/MARK.jfif', 500, 500, 'marc');  
+}
