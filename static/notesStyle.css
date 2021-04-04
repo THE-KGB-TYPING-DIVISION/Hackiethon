@@ -15,6 +15,24 @@ body {
     background-color: red;
     padding-left: 20px;
 }
+/* The side navigation menu */
+.sidebar{
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+/* Sidebar links */
+.sidebar a {
+    color: black;
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 16px;
+    text-decoration: none;
+}
 
 /* Active/current link */
 .sidebar a.active {
@@ -34,6 +52,7 @@ body {
 #container {
     margin: 20px 20px 20px 20px;
     color: white;
+    margin-left: 200px;
     
 }
 #area {
@@ -68,7 +87,8 @@ body {
 a.button {
     width: 15%;
     display: inline-block;
-    margin-top: 100px;
+    margin-top: 60px;
+    margin-left: 200px;
     background: -webkit-linear-gradient(top, #db9280, #db9280);
     background: -moz-linear-gradient(top, #db9280, #db9280);
     background: -ms-linear-gradient(top, #db9280, #db9280);
