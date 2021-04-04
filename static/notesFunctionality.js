@@ -23,15 +23,20 @@ function display_saved_note() {
 }
 display_saved_note();
 function save() {
-    
-    var stor = 1;
+    /*if (localStorage.getItem('stor') == null) {
+        var stor = 0;
+    } else {
+        stor += 1;
+    }*/
     if(check_web_storage_support() == true) {
         var area = document.getElementById("area");
         if(area.value != '') {
-            localStorage.setItem(stor + 1, area.value);
+            localStorage.setItem('stor', localStorage.length);
+            localStorage.setItem(localStorage.length+1, area.value);
         }
         else {
             alert("Nothing to save");
+        
         }
 
     }
