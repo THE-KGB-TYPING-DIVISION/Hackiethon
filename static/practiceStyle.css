@@ -52,7 +52,7 @@ p{
     font-family: 'Courier New', Courier, monospace;
 }
 
-
+/*red header :D */
 .header-cont { width:100%; position:fixed; top:0px; }
 .header {
     height: 100px;
@@ -62,7 +62,9 @@ p{
     margin:0px auto;
     color: yellow;
     background-color: red;
+    padding-left: 20px;
 }
+
 .content {
     width: auto;
     background:#F0F0F0;
