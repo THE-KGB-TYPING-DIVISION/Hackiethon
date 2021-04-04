@@ -42,7 +42,9 @@ function clear() {
 }
 
 function display_all() {
+    var all_notes = ''
     for(var i =0; i < localStorage.length; i++) {
-        console.log(localStorage.getItem(localStorage.key(i)));
+        all_notes = all_notes + localStorage.getItem(localStorage.key(i));
     }
+    document.getElementById('all notes').value = all_notes;
 }
