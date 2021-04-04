@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>DinoGame</title>
         <style>
+            
             * {
                 margin: 0;
                 padding: 0;
@@ -13,12 +14,24 @@
             canvas {
                 display: block;
             }
+            .gamebutton {
+                position:fixed;
+                left: 25px;
+                top: 35px;
+            }
         </style>
 
     </head>
     <body>
         <canvas id="game" width="640" height="400"></canvas>
         <script src="/static/dino.js"></script>
+        <a href="/homepage/", target=_blank>
+            <button class = "gamebutton" onclick="window.location.href='/homepage/'">
+                Home
+            </button>
+
+        </a>
+        
     </body>
 
 </html>

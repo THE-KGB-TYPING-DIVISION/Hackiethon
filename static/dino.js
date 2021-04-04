@@ -5,6 +5,7 @@ const ctx = canvas.getContext('2d');
 let score;
 let scoreText;
 let highscore;
+let controlsText;
 let highscoreText;
 let player;
 let gravity;
@@ -148,6 +149,7 @@ function Start () {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
 
+
   ctx.font = "20px sans-serif";
 
   gameSpeed = 3;
@@ -163,7 +165,7 @@ function Start () {
 
   scoreText = new Text("Score: " + score, 25, 25, "left", "#212121", "20");
   highscoreText = new Text("Highscore: " + highscore, canvas.width - 25, 25, "right", "#212121", "20");
-
+  controlsText = new Text("Use W to jump and S to duck", 0, 0, "left", "#212121", "20");
   requestAnimationFrame(Update);
 }
 
@@ -213,6 +215,8 @@ function Update () {
   score++;
   scoreText.t = "Score: " + score;
   scoreText.Draw();
+
+  controlsText.Draw();
 
   if (score > highscore) {
     highscore = score;
