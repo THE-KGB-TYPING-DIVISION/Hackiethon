@@ -25,8 +25,8 @@ def sike():
 @app.route('/homepage/note/')
 def note():
     return render_template('webnotes.html')
-@app.route('/homepage/note/timer')
-def countdownCall():
+@app.route('/homepage/timer')
+def countdown():
     return render_template('timer.html')
 
 @app.route('/homepage/dinogame')
