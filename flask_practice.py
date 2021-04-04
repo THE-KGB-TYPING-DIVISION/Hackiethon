@@ -29,6 +29,9 @@ def note():
 def countdownCall():
     return render_template('timer.html')
 
+@app.route('/homepage/dinogame')
+def dino():
+    return render_template('dinoGame.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
