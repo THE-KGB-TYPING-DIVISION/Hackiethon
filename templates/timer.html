@@ -18,9 +18,24 @@ p {
     <h2 id="end"></h2>
     <script>
     // The data/time we want to countdown to
-    var datetocount = window.prompt("Enter the date you want to count down to (in the form Jul 25, 2021 16:37:52): ")
+
     var countDownDate = new Date(datetocount).getTime();
 
+    if (confirm("would you like to enter a new day to count down to?")) {
+        setcount();
+
+    } else {
+        fetchcount();
+    }
+
+    function setcount() {
+        var datetocount = window.prompt("Enter the date you want to count down to (in the form Jul 25, 2021 16:37:52): ");
+        var countDownDate = new Date(datetocount).getTime();
+        localStorage.setItem('date', countDownDate);
+    }
+    function fetchcount() {
+        var datetocount = localStorage.getItem('date', countDownDate);
+    }
     // Run myfunc every second
     var myfunc = setInterval(function() {
 
@@ -46,7 +61,7 @@ p {
         document.getElementById("hours").innerHTML = "" 
         document.getElementById("mins").innerHTML = ""
         document.getElementById("secs").innerHTML = ""
-        document.getElementById("end").innerHTML = "TIME UP!!";
+        document.getElementById("end").innerHTML = "ono";
     }
     }, 1000);
     </script>
