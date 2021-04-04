@@ -52,6 +52,7 @@ body {
 #container {
     margin: 20px 20px 20px 20px;
     color: white;
+    margin-left: 200px;
     
 }
 #area {
@@ -87,6 +88,7 @@ a.button {
     width: 15%;
     display: inline-block;
     margin-top: 60px;
+    margin-left: 200px;
     background: -webkit-linear-gradient(top, #db9280, #db9280);
     background: -moz-linear-gradient(top, #db9280, #db9280);
     background: -ms-linear-gradient(top, #db9280, #db9280);
